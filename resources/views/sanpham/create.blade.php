@@ -1,4 +1,7 @@
-<form action="{{ route('sanpham.store') }}" method="POST">
+@extends('layouts.admin') {{-- Kế thừa layout --}}
+@section('content')
+
+<form action="{{ route('sanpham.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label for="ten_san_pham">Tên sản phẩm:</label>
@@ -6,8 +9,9 @@
     </div>
     <div class="form-group">
         <label for="hinh_anh">Hình ảnh:</label>
-        <input type="text" class="form-control" id="hinh_anh" name="hinh_anh">
+        <input type="file" class="form-control" id="hinh_anh_input" name="hinh_anh" onchange="showImage(event)">
     </div>
+    <img src="" alt="Hình Ảnh Sản Phẩm" style="width:200px; display:none" id="hinh_anh_preview">
     <div class="form-group">
         <label for="gia">Giá:</label>
         <input type="text" class="form-control" id="gia" name="gia">
@@ -30,3 +34,21 @@
     </div>
     <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
 </form>
+@endsection
+@section('js')
+
+<script>
+    function showImage(event){
+        const hinh_anh_preview = document.getElementById('hinh_anh_preview');
+        const file = event.target.files[0];
+        const render = new FileReader();
+        render.onload = function(){
+            hinh_anh_preview.src = render.result;
+            hinh_anh_preview.style.display = 'block';
+        }
+        if(file){
+            render.readAsDataURL(file);
+        }
+    }
+</script>
+@endsection

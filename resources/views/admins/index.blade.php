@@ -30,14 +30,14 @@
             @foreach($listSanPham as $sanPham)
                 <tr>
                     <td>{{ $sanPham->ten_san_pham }}</td>
-                    <td><img src="{{ $sanPham->hinh_anh }}" alt="Hình ảnh" width="50"></td>
+                    <td><img src="{{ Storage::url($sanPham->hinh_anh)}}" alt="Hình ảnh" width="50"></td>
                     <td>{{ $sanPham->gia }}</td>
                     <td>{{ $sanPham->so_luong }}</td>
                     <td>{{ $sanPham->mo_ta }}</td>
                     <td>{{ $sanPham->ngay_nhap }}</td>
                     <td>{{ $sanPham->danh_muc_id }}</td>
                     <td>
-
+                        <form action="{{ route('sanpham.destroy', $sanPham->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này không?')">Xóa</button>
@@ -47,4 +47,5 @@
             @endforeach
         </tbody>
     </table>
+
 @endsection

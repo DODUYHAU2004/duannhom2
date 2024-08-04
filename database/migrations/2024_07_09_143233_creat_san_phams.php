@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('ten_san_pham', 100);
             $table->string('hinh_anh') -> nullable();
             $table->double('gia', 10, 2);
+
             $table->integer('so_luong')->nullable(); // nullable cho phép giá trị là null
             $table->text('mo_ta');
             $table->date('ngay_nhap'); // Kiểu ngày tháng năm

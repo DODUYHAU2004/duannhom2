@@ -1,108 +1,36 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Menu</title>
-    <style>
-        /* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic styling for the header */
-header {
-    background-color: #99CCFF;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav {
-    flex: 1;
-    text-align: center;
-}
-
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-}
-
-.search input[type="text"] {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-}
-
-.search button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin-left: 5px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#">Logo</a>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">Danh mục</a></li>
-                    <li><a href="#">Tài khoản</a></li>
-
-
-
-                </ul>
-            </nav>
-            <div class="search">
-                <input type="text" placeholder="Tìm kiếm...">
-                <button>Tìm kiếm</button>
-            </div>
-        </div>
-    </header>
-     -->
-    <!-- Content of your website -->
-</body>
-</html>
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PHP3-LARAVEL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> -->
